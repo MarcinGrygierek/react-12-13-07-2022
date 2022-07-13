@@ -1,4 +1,5 @@
 import { Sum } from './Sum';
+import { SumArray } from './SumArray';
 
 const App = () => {
   const number1 = Number(window.prompt('Podaj pierwszą liczbę'));
@@ -16,6 +17,7 @@ const App = () => {
     <div>
       <h1>Sumator</h1>
       <Sum a={number1} b={number2} />
+      <SumArray numbers={[1, 2, 3, 4, 6]} />
     </div>
   );
 };
