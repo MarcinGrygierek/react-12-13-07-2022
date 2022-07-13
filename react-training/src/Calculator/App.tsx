@@ -1,4 +1,7 @@
 import { ChangeEvent, useState } from 'react';
+import { CalculatorButtons } from './CalculatorButtons';
+import { CalculatorResult } from './CalculatorResult';
+import { CalculatorInputs } from './CalculatorInputs';
 import './App.css';
 
 const App = () => {
@@ -37,35 +40,21 @@ const App = () => {
     setResult(Number(first) / Number(second));
   };
 
-  const formatResult = (result: number | string | undefined) => {
-    if (typeof result === 'number') return result.toFixed(2);
-    if (typeof result === 'string') return result;
-    return '-';
-  };
-
   return (
     <div className="calculator">
-      <div className="calculator-inputs">
-        <input
-          type="number"
-          name="first"
-          value={first}
-          onChange={handleFirstChange}
-        />
-        <input
-          type="number"
-          name="second"
-          value={second}
-          onChange={handleSecondChange}
-        />
-      </div>
-      <div className="calculator-result">{formatResult(result)}</div>
-      <div className="calculator-buttons">
-        <button onClick={add}>+</button>
-        <button onClick={subtract}>-</button>
-        <button onClick={divide}>/</button>
-        <button onClick={multiply}>*</button>
-      </div>
+      <CalculatorInputs
+        first={first}
+        second={second}
+        handleFirstChange={handleFirstChange}
+        handleSecondChange={handleSecondChange}
+      />
+      <CalculatorResult result={result} />
+      <CalculatorButtons
+        add={add}
+        subtract={subtract}
+        divide={divide}
+        multiply={multiply}
+      />
     </div>
   );
 };

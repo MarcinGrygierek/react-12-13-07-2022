@@ -1,0 +1,7 @@
+.calculator-result {
+    display: flex;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+    justify-content: center;
+}
