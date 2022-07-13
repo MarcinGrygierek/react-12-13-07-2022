@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from './App_8_props/App';
+import { App } from './App_9_zad_1_4/App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
