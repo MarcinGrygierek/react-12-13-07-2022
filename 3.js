@@ -1,3 +1,5 @@
+// w tym przypadku ... oznacza rest operator - parametry od trzeciego wzwyż
+// zostaną zapisane w postaci tablicy - mamy możliwość przekazania dowolnej ilości parametrów
 function foo(a, b, ...params) {
   console.log(a, b, params);
 }

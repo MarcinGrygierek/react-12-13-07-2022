@@ -1,9 +1,12 @@
 // hoisting następuje
 
+// nie dostaniemy błędu ale informację że zmienna a ma wartość undefined
+// ponieważ hoisting dotyczy tylko deklaracji, nie wartości
 console.log(a);
 
 var a = 10;
 
+// wywołanie funkcji jest możliwe z powodu hoistingu
 foo();
 
 function foo() {

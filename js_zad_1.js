@@ -19,6 +19,12 @@ const getSum = (arr) => {
 
 // v2
 const getSumV2 = (arr) => {
+  // funkcja użyta wewnątrz reduce daje nam dwa parametry
+  // acc - akumulator, który "akumuluje" wartość
+  // curr - aktualny element w tablicy
+  // drugim parametrem reduce może być początkowa wartość akumulatora
+  // domyślnie akumulator jest ustawiany na wartośc pierwszego elementu tablicy
+  // a curr na drugi element
   const sum = arr.reduce((acc, curr) => {
     return acc + curr;
   });

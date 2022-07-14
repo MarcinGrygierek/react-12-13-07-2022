@@ -13,7 +13,8 @@ const foo = (a, b) => {
   return a + b;
 };
 
-// funkcja strzałkowa - v2
+// funkcja strzałkowa - v2, możemy uniknąć {} i return w przypadku kiedy to co znaajduje się
+// za strzałką ma być od razu wartością zwracaną
 const foo = (a, b) => a + b;
 
 // v3
